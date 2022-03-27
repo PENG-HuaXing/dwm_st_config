@@ -1,0 +1,5 @@
+1. set Mod Button to window
+2. patch autostart to auto run some script
+3. patch alpha
+  + Allow dwm to have translucent bars, while keeping all the text on it opaque, just like the alpha-patch for st
+
