@@ -2,4 +2,6 @@
 2. patch autostart to auto run some script
 3. patch alpha
   + Allow dwm to have translucent bars, while keeping all the text on it opaque, just like the alpha-patch for st
+4. patch fullscreen
+  + Applies the monocle layout with the focused client on top and hides the bar. When pressed again, shows the bar and restores the layout that was active before going fullscreen.
 
