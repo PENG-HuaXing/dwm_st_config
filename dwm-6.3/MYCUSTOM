@@ -10,5 +10,6 @@
   + Follow a window to the tag it is being moved to.
 7. patch scratchpad
   + The scratchpad patch allows you to spawn or restore a floating terminal window. It is usually useful to have one to do some short typing.
+  + Don't know what is XK_grave, so change XK_g
 
 
