@@ -4,4 +4,6 @@
   + Allow dwm to have translucent bars, while keeping all the text on it opaque, just like the alpha-patch for st
 4. patch fullscreen
   + Applies the monocle layout with the focused client on top and hides the bar. When pressed again, shows the bar and restores the layout that was active before going fullscreen.
+5. patch pertag
+  + This patch keeps layout, mwfact, barpos and nmaster per tag.
 
