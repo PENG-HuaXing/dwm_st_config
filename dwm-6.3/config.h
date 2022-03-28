@@ -72,11 +72,15 @@ static const char *dmenucmd[] = { "rofi", "-show", "drun", "NULL"};
 static const char *termcmd[]  = { "st", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
+static const char *flameshot[] = { "/home/zwei/.dwm/script/fs.sh", "NULL"};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+	/* lanuch flameshot */
+	{ MODKEY|ShiftMask,             XK_a,	   spawn,          {.v = flameshot } },
+	
 	{ MODKEY,                       XK_g,	   togglescratch,  {.v = scratchpadcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstackvis,  {.i = +1 } },
