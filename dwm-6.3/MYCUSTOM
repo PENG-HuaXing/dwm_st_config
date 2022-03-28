@@ -34,5 +34,10 @@
   + Since this patch relies on knowing how big everything is in the taskbar, make sure to adjust the buttonpress()/drawbar() functions to account for any space in the taskbar used by other patches (such as systray).
   + For myself, M-s is uesless, so I disable it in config.h
 
+10. set config.h font pixelsize; But there is a issue that ther nerd font icon is too small in menubar
+  + https://github.com/Powerlevel9k/powerlevel9k/issues/430
+    > Yeah basically as far as the ...Nerd Font Complete Mono fonts go those are just going to be smaller (except hopefully for powerline symbols - I'd have to check on that) so that they don't appear squished/stretched and scale appropriately.
+    > The Nerd Fonts without the 'Mono' suffix should not have the 'too small' issue.
+  + the Mono property make the icons smaller than real
 
 
