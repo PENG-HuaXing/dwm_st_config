@@ -1,0 +1,12 @@
+acpi_value=$(acpi -V)
+battery_percent=$(echo "$acpi_value" | grep -m1 "Battery" | gawk -F, '{print $2}' | sed 's/ //' | sed 's/%//')
+if [ "$(echo $acpi_value | grep -i adapter | gawk '{print $3}')" = "off-line" ]
+then
+	echo "off-line"
+else
+	echo "on-line"
+fi
+
+echo real
+echo "$(echo $acpi_value | grep -i adapter)"
+echo "$(echo $acpi_value | grep -i adapter | gawk '{print $3}')"
