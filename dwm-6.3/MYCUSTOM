@@ -16,6 +16,23 @@
 
 	+ adds "useless gaps" around windows
     + removes everything (gaps and borders) when in monocle mode for aesthetic purpose.
+9. patch awesomebar
+  + This patch changes the taskbar to be more like awesome. To be specific, it:
+
+    + shows all tasks in the current tag in the taskbar at all times
+    + clicking on an unfocused window's title in the taskbar focuses that window
+    + clicking on a focused window's title in the taskbar hides that window
+    + clicking on a hidden window's title in the taskbar unhides and focuses that window
+
+  + You can also hide and unhide windows from the keyboard. The default bindings are:
+
+    + M-j/M-k to cycle through the visible windows in the current workspace
+    + M-J/M-K to cycle through all windows in the current workspace - hidden windows shown this way are re-hidden once focus is lost
+    + M-h to hide the current active window
+    + M-s to unhide a window made visible by M-J/M-K
+
+  + Since this patch relies on knowing how big everything is in the taskbar, make sure to adjust the buttonpress()/drawbar() functions to account for any space in the taskbar used by other patches (such as systray).
+  + For myself, M-s is uesless, so I disable it in config.h
 
 
 
