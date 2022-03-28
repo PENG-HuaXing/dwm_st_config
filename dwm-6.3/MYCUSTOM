@@ -11,5 +11,11 @@
 7. patch scratchpad
   + The scratchpad patch allows you to spawn or restore a floating terminal window. It is usually useful to have one to do some short typing.
   + Don't know what is XK_grave, so change XK_g
+8. patch uselessgap
+  + For aesthetic purposes, this patch:
+
+	+ adds "useless gaps" around windows
+    + removes everything (gaps and borders) when in monocle mode for aesthetic purpose.
+
 
 
