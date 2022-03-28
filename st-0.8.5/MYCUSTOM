@@ -1,6 +1,6 @@
 1. set font JetBrainsMono Nerd Font Mono:style=Bold
   + if set font name wrong, terminal letter will overlay eachother
-2. add alpha patch
+2. add alpha patch; To let alpha effect, an X composite manager (e.g. compton, xcompmgr)
 3. add scroll patch, I can scroll terminal [Shift] + [PgUp/PgDn]
 4. add scroll mouse patch, I can scroll terminal [Shift] + [mouse wheel]
 5. modified scroll patch, I can scroll only one line [Shift] + [Up/Dwon]
